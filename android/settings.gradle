@@ -1,0 +1,8 @@
+include ':react-native-sqlite-storage'
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+project(':react-native-sqlite-storage').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sqlite-storage/src/android')
+
+rootProject.name = 'bdSample'
+
+include ':app'
